@@ -1,0 +1,101 @@
+.cryptoRow {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    margin-bottom: .3 rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+  }
+  
+  .cryptoRow + .cryptoRow {
+    border-top: 1px solid #888;
+  }
+  
+  
+  .cell {
+    padding: 0.25rem;
+  }
+
+  .headingCell {
+      padding: .15rem;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bolder;
+  }
+
+  .headingCell + .headingCell {
+      margin-left: 1rem;
+  }
+  
+  .cr-rank {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .cr-name {
+    width: 10rem;
+    text-align: start;
+    vertical-align: middle;
+    flex: 2;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cr-name img {
+    width: 1.3rem;
+    margin-right: .3rem;
+    vertical-align: middle;
+  }
+
+  .cr-longName {
+    display: inline;
+  }
+  
+  .cr-price {
+    flex: 2;
+    text-align: center;
+  }
+  
+  .cr-1hr {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .cr-24h {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .cr-7d {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .cr-vol {
+    flex: 2;
+    text-align: right;
+  }
+  
+  .cr-mc {
+    flex: 2;
+    text-align: right;
+  }
+  
+
+  @media screen and (max-width: 1024px) {
+
+    .cr-vol {
+      display: none;
+    }
+
+  }
+
+  @media screen and (max-width: 1120px) {
+    .cr-longName {
+      display: none;
+    }
+  }
+  

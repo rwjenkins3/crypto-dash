@@ -1,38 +1,125 @@
+
 .App {
+  text-align: center;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #ddd;
+}
+
+.cr-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.cr-container .cryptoRow:nth-child(2n) {
+  background-color: #111;
+}
+
+.my-class {
+  width: 640px;
+  border: #ddd 1px solid;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.left {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  padding: 0.8rem;
+}
+
+.left img {
+  width: 5rem;
+}
+
+.right{ 
+  flex: 3;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
+
+  justify-content: space-between;
+  align-items: center;
+  color: whitesmoke;
+  padding: 0.8rem;
+}
+
+.right_row_container {
+  width: 100%;
+}
+
+.right_row_top_container {
+  width: 100%;
+  text-align: center;
+}
+.right_row_top_container p {
+  margin: 0.2rem;
+}
+
+
+.right_row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.right_row_item {
+  flex: 1;
+  border-bottom: #ddd 1px solid;
+  height: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.right_row_data {
+  flex: 1;
+  margin-top: .6rem;
+  height: 2rem;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#coin_rank {
+  font-size: x-large;
+  font-weight: bolder;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#rank_container {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -1.0rem;
+  left: .5rem;
+  vertical-align: middle;
+  padding: 8px;
+  border: #ddd solid 5px;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+#price {
+  font-weight: bolder;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

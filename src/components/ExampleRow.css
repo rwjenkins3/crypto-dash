@@ -1,0 +1,78 @@
+.cryptoRow {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    margin-bottom: .3 rem;
+  }
+  
+  .cryptoRow + .cryptoRow {
+    border-top: 0px;
+  }
+  
+  .cr-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cell {
+    padding: 0.25rem;
+  }
+
+  .headingCell {
+      padding: .15rem;
+      background-color: aqua;
+      border-radius: 10px;
+      text-align: center;
+  }
+
+  .headingCell + .headingCell {
+      margin-left: 1rem;
+  }
+  
+  .cr-rank {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .cr-name {
+    width: 10rem;
+    text-align: start;
+    background-color: aqua;
+    flex: 2;
+  }
+  
+  .cr-price {
+    flex: 2;
+    text-align: center;
+  }
+  
+  .cr-1hr {
+    flex: 1;
+  }
+  
+  .cr-24h {
+    flex: 1;
+  }
+  
+  .cr-7d {
+    flex: 1;
+  }
+  
+  .cr-vol {
+    flex: 2;
+    text-align: right;
+  }
+  
+  .cr-mc {
+    flex: 2;
+    text-align: right;
+  }
+  
+  

@@ -1,0 +1,111 @@
+.my-class {
+    width: 90%;
+    min-width: 480px;
+    border: #ddd 1px solid;
+    border-radius: 5px;
+  
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    margin-bottom: 2rem;
+  }
+  
+  .left {
+    flex: 1;
+  
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+  
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    padding: 0.8rem;
+  }
+  
+  .left img {
+    width: 5rem;
+  }
+  
+  .right{ 
+    flex: 3;
+  
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+  
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    padding: 0.8rem;
+  }
+  
+  .right_row_container {
+    width: 100%;
+  }
+  
+  .right_row_top_container {
+    width: 100%;
+    text-align: center;
+  }
+  .right_row_top_container p {
+    margin: 0.2rem;
+  }
+  
+  
+  .right_row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+  }
+  
+  .right_row_item {
+    flex: 1;
+    border-bottom: #ddd 1px solid;
+    height: 2rem;
+    text-align: center;
+  }
+  
+  .right_row_data {
+    flex: 1;
+    margin-top: .6rem;
+    height: 2rem;
+    text-align: center;
+  }
+  
+  #coin_rank {
+    font-weight: bolder;
+    margin-top: -0.40rem;
+  }
+
+  .reg_rank {
+    font-size: x-large;
+    font-weight: bolder;
+    margin-top: -0.40rem;
+  }
+
+  .sml_rank {
+    font-size: medium;
+    font-weight: bolder;
+    margin-top: -0.15rem;
+  } 
+  
+  .rank_container {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -1.0rem;
+    left: .5rem;
+    vertical-align: middle;
+    padding: 8px;
+    border: #ddd solid 5px;
+    border-radius: 50%;
+    background-color: black;
+  }
+  
+  .price {
+    font-weight: bolder;
+  }
